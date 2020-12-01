@@ -1,0 +1,118 @@
+html {
+    background-color:#FFFAFA;
+}
+
+.display{
+    position: fixed;
+    width: 100vh;
+    height: 65vh;
+    top: 50%;
+    left: 50%;
+   transform: translate(-50%, -50%);
+   background-image: linear-gradient(to bottom right, white, rgb(64, 164, 211));
+   box-shadow: 10px 5px 25px rgba(0, 0, 0, 0.75);
+  }
+
+  .loginShow{
+      width: 200px;
+    position: fixed;
+    top: 35%;
+    left: 50%;
+   transform: translate(-50%, -50%);
+  }
+
+  .hideModul{
+    width: 200px;
+  position: fixed;
+  top: 35%;
+  left: 50%;
+ transform: translate(-50%, -50%);
+}
+
+  .registerShow{
+      width: 200px;
+    position: fixed;
+    top: 60%;
+    left: 50%;
+   transform: translate(-50%, -50%);
+  }
+  
+
+  .display {
+    animation: fadein 3.5s;
+    -moz-animation: fadein 3.5s; /* Firefox */
+    -webkit-animation: fadein 3.5s; /* Safari and Chrome */
+    -o-animation: fadein 3.5s; /* Opera */
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.loginShow, .registerShow, .hideModul{
+    background-color: black;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+
+  .registerShow:hover, .loginShow:hover, .hideModul:hover {background-color: yellow; color: black;}
+
+  .registerShow:focus, .loginShow:focus, .hideModul:focus {outline: 0;}
+
+  .loginButton, .registerButton{
+    background-color: black;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    padding: 12px 22px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .loginButton:hover, .registerButton:hover{background-color: yellow; color: black;}
+
+  .loginButton:focus, .registerButton:focus{outline: 0;}

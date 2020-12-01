@@ -1,0 +1,46 @@
+.homeText{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.homesubText{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+
+.theInput{
+    font-size: large;
+    border: none;
+    border-bottom: 2px solid black;
+    background-color:whitesmoke;
+    text-align: center;
+    
+}
+.logout{
+    background-color: black;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    padding: 12px 22px;
+    text-align: center;
+    font-size: 16px;
+    margin: 17px 2px;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    padding-top: 15px;
+    width: 300px;
+  }
+
+  .logout:hover{background-color: yellow; color: black;}
+
+  .logout:focus{outline: 0;}
+
+.LoginModul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
