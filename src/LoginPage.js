@@ -55,7 +55,7 @@ class LoginPage extends Component {
                     </div>
                     {this.props.logReg ? <button type="submit" onClick={this.login} class="loginButton">Login</button> : null}
                     {this.state.wrongPass ? <p class='wrongPassword'>Wrong Password Please Try Again!</p>: null}
-                    {!this.props.logReg ?<button onClick={this.signup} className="registerButton">Signup</button>: null}
+                    {!this.props.logReg ?<button onClick={this.signup} className="loginButton">Signup</button>: null}
                     {this.state.signupErr ? <p class='signupErr'>Use "@email.com", Account Exists, or password not secure!</p>: null}
             </form>
             </div>

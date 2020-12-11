@@ -47,9 +47,13 @@ class Home extends Component {
         <div className='LoginModul'>
             {this.state.name ? <h1 className='homeText'>Welcome to your account, {this.state.name}!</h1>: <h1 className='homeText'>Please set your name or login!</h1>}
             <h2 className='homesubText'>Try Changing your profile name in our database!</h2>
-            <input className='theInput' id='name' maxLength='21'></input>
-            <button className='logout' onClick={()=>this.changeName()}>Set Name</button>
-            <button onClick={()=>this.logout()} className='logout'>Logout</button>
+            <div className='homeSpace'>
+                <input className='theInput' id='name' maxLength='21'></input>
+                <button className='setName' onClick={()=>this.changeName()}>Set Name</button>
+            </div>
+            <div className='logoutSpace'>
+                <button onClick={()=>this.logout()} className='logout'>Logout</button>
+            </div>
         </div>
         );
     }

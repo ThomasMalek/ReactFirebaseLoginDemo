@@ -35,17 +35,19 @@ class Login extends Component {
 
   render() {
     return (
-      <div>
-        <div className='leftSide'>
-          {!this.state.showAction ? <button className='loginShow' onClick={()=>this.loginClick()}>Login</button>: null}
-          {!this.state.showAction ? <button className='registerShow' onClick={()=>this.registerClick()}>Sign Up</button>: null}
-          {this.state.showAction ? <LoginPage data={data} logReg={this.log}/> : null}
-          <div className='reverse'>
-          {this.state.showAction ? <button className='hideModul' onClick={()=>this.reverseButtonClick()}>Return</button>: null}
+        <div className='loginPage'>
+          <div className='displayButtons'>
+          <div>
+            {!this.state.showAction ? <button className='theButtons' onClick={()=>this.loginClick()}>Login</button>: null}
           </div>
-        </div>
-      <div className='rightSide'>
-      </div>
+          <div>
+            {!this.state.showAction ? <button className='theButtons' onClick={()=>this.registerClick()}>Sign Up</button>: null}
+          </div>
+          </div>
+          {this.state.showAction ? <LoginPage data={data} logReg={this.log}/> : null}
+          <div className='reverseSpace'>
+            {this.state.showAction ? <button className='reverse' onClick={()=>this.reverseButtonClick()}>Return</button>: null}
+          </div>
       </div>
     );
   }

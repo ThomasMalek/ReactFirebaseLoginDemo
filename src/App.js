@@ -39,14 +39,6 @@ class App extends Component {
   render() {
     return(
     <div className="App">
-      <div className='headerBox'>
-        <h1 className='headText'>Welcome to my Firebase Authentication Demo</h1>
-      </div>
-      <div className='subheaderBox'>
-        <a href='https://www.linkedin.com/in/thomas-m-mccarthy/'>
-        <h4 className='subheadText'>Designed and Deployed by Thomas McCarthy</h4>
-        </a>
-      </div>
       <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
       <script src="./Firebase" type='text/javascript'></script>
       <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-firestore.js"></script>
@@ -54,7 +46,21 @@ class App extends Component {
       <script src="/__/firebase/8.1.1/firebase-analytics.js"></script>
       <script src="/__/firebase/init.js"></script>
       <div className='display'>
-        {this.state.user ? (<Home data={data} />) : (<Login data={data}/>)}
+        <div className='colorCover'>
+        <div className='leftSide'>
+          {this.state.user ? (<Home data={data} />) : (<Login data={data}/>)}
+        </div>
+        <div className='rightSide'>
+          <div className='headerBox'>
+            <h1 className='headText'>Welcome to my Firebase Authentication Demo!</h1>
+          </div>
+          <div className='subheaderBox'>
+            <a href='https://www.linkedin.com/in/thomas-m-mccarthy/'>
+              <h4 className='subheadText'>Designed and Deployed by Thomas McCarthy</h4>
+            </a>
+          </div>
+        </div>
+      </div>
       </div>
     </div>
     )};
